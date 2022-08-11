@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net 6 demo", "net 6 demo\net 6 demo.csproj", "{48B4C493-C266-4866-ABD5-166BB2C97CFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "net 6 demo", "net 6 demo\net 6 demo.csproj", "{48B4C493-C266-4866-ABD5-166BB2C97CFB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
