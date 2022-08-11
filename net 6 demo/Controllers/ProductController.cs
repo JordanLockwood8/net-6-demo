@@ -47,5 +47,10 @@ namespace net_6_demo.Controllers
             _repo.InsertProduct(productToInsert);
             return RedirectToAction("ProductIndex");
         }
+        public IActionResult DeleteProduct(Product product)
+        {
+            _repo.DeleteProduct(product);
+            return RedirectToAction("ProductIndex");
+        }
     }
 }
