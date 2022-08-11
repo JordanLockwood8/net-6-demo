@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using net_6_demo.Models;
 
 namespace net_6_demo.Controllers
 {
@@ -20,6 +21,21 @@ namespace net_6_demo.Controllers
         {
             var product = _repo.GetById(id);
             return View(product);
+        }
+        public IActionResult UpdateProduct(int id)
+        {
+            Product prod = _repo.GetById(id);
+            if (prod == null)
+            {
+                return View("ProductNotFound");
+            }
+            return View(prod);
+        }
+        public IActionResult UpdateProductToDatabase(Product product)
+        {
+            _repo.UpdateProduct(product);
+
+            return RedirectToAction("ViewProduct", new { id = product.ProductID });
         }
 
     }
